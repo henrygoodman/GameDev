@@ -5,7 +5,7 @@ using UnityEngine;
 public class PrintAndHide : MonoBehaviour
 {
     public Renderer rend;
-    int i = 0;
+    int i = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class PrintAndHide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.name + ":" + i++);
+        Debug.Log(gameObject.name + ":" + ++i);
     }
 }
